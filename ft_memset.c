@@ -1,7 +1,7 @@
-void *ft_memset(void *s, int c, int n)
+void	*ft_memset(void *s, int c, int n)
 {
-	int i;
-	unsigned char *tab;
+	int				i;
+	unsigned char	*tab;
 
 	tab = (unsigned char *)s;
 	i = 0;
@@ -19,6 +19,6 @@ int main (int ac, char **av)
 {
 	if (ac != 4)
 		return (1);
-	printf("le tableau de char modifier est devenu : %s\n", (char *)ft_memset(av[1], (av[2][0]), atoi(av[3])));
+	printf("%s\n", (char *)ft_memset(av[1], (av[2][0]), atoi(av[3])));
 	return (0);
 }*/

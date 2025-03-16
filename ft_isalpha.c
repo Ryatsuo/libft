@@ -1,12 +1,12 @@
-int	ft_isalpha(unsigned char *tab)
+int	ft_isalpha(int c)
 {
 	int	i;
 
 	i = 0;
-	while (tab[i])
+	while (c)
 	{
-		if ((tab[i] < 'a' || tab[i] > 'z')
-			&& (tab[i] < 'A' || tab[i] > 'Z'))
+		if ((c < 'a' || c > 'z')
+			&& (c < 'A' || c > 'Z'))
 			return (0);
 		i++;
 	}
@@ -15,7 +15,7 @@ int	ft_isalpha(unsigned char *tab)
 /*#include <stdio.h>
 int main ()
 {
-    unsigned char tab[] = "coucou";
-    printf("resultat %d\n", ft_isalpha(tab));
+    unsigned char tab[] = "c";
+    printf("resultat %d\n", ft_isalpha(tab[0]));
     return 0;
 }*/

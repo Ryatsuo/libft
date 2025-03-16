@@ -1,0 +1,20 @@
+int	ft_strlen(const char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		i++;
+	}
+	return (i);
+}
+/*
+#include <stdio.h>
+int main (int ac, char **av)
+{
+	if (ac != 2)
+		return (1);
+	printf("La longeur de la string est de : %d\n", ft_strlen(av[1]));
+	return (0);
+}*/

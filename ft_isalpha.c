@@ -1,9 +1,9 @@
-int ft_isalpha(unsigned char *tab)
+int	ft_isalpha(unsigned char *tab)
 {
-    int i;
+    int	i;
 
     i = 0;
-    while(tab[i])
+    while (tab[i])
     {
         if ((tab[i] < 'a' || tab[i] > 'z') && 
             (tab[i] < 'A' || tab[i] > 'Z'))
@@ -12,7 +12,6 @@ int ft_isalpha(unsigned char *tab)
     }
     return (1);
 }
-
 /*#include <stdio.h>
 int main ()
 {

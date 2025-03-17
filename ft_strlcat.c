@@ -1,6 +1,6 @@
-unsigned int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
@@ -10,11 +10,11 @@ unsigned int	ft_strlen(const char *s)
 	return (i);
 }
 
-unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
-	unsigned int	i;
-	unsigned int	len_src;
-	unsigned int	len_dst;
+	size_t	i;
+	size_t	len_src;
+	size_t	len_dst;
 
 	i = 0;
 	len_src = ft_strlen(src);

@@ -1,6 +1,6 @@
-void	*ft_memmove(void *dest, const void *src, unsigned int n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned int		i;
+	size_t		i;
 	unsigned char		*d;
 	const unsigned char	*s;
 

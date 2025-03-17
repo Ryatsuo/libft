@@ -19,6 +19,6 @@ int main (int ac, char **av)
 {
 	if(ac == 1)
 		return (1);
-	printf("l'occurence a ete trouve ici : %s", strchr(av[1], av[2][0]));
+	printf("l'occurence a ete trouve ici : %s", ft_strchr(av[1], av[2][0]));
 	return (0);
 }*/

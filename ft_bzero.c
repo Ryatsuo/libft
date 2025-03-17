@@ -1,7 +1,7 @@
-void	ft_bzero(void *s, int n)
+void	ft_bzero(void *s, unsigned int n)
 {
 	unsigned char	*tmp;
-	int				i;
+	unsigned int	i;
 
 	tmp = s;
 	i = 0;

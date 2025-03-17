@@ -1,6 +1,6 @@
-void	*ft_memset(void *s, int c, int n)
+void	*ft_memset(void *s, int c, unsigned int n)
 {
-	int				i;
+	unsigned int	i;
 	unsigned char	*tab;
 
 	tab = (unsigned char *)s;

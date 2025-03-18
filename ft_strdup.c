@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s)
 	tab[i] = '\0';
 	return (tab);
 }
-
+/*
 #include <stdio.h>
 int main (void)
 {
@@ -29,4 +29,4 @@ int main (void)
 	printf("%s\n", tab);
 	free(tab);
 	return (0);
-}
+}*/

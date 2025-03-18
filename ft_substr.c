@@ -16,16 +16,6 @@ static char	*ft_strscpy(char const *c, char *tab, int start, size_t len)
 	return (tab);
 }
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
-
 char	*ft_substr(char const *c, unsigned int start, size_t len)
 {
 	size_t			i;
@@ -54,7 +44,7 @@ char	*ft_substr(char const *c, unsigned int start, size_t len)
 		return (NULL);
 	return (ft_strscpy(c, tab, tmp_start, i));
 }
-
+/*
 #include <stdio.h>
 int main (void)
 {
@@ -63,4 +53,4 @@ int main (void)
 	printf("le tableau a pour valeur :%s\n", tab);
 	free(tab);
 	return (0);
-}
+}*/

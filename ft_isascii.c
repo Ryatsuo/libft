@@ -1,4 +1,6 @@
 // Teste si un caractère est dans la table ascii (7 bit)
+#include "libft.h"
+
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

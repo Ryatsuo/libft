@@ -1,4 +1,6 @@
 // Recherche la dernière occurence d'un caractère dans une chaine
+#include "libft.h"
+
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;

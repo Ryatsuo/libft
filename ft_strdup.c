@@ -1,17 +1,5 @@
 // Duplique un chaine de caractère avec Malloc
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
@@ -32,7 +20,7 @@ char	*ft_strdup(const char *s)
 	tab[i] = '\0';
 	return (tab);
 }
-/*
+
 #include <stdio.h>
 int main (void)
 {
@@ -41,4 +29,4 @@ int main (void)
 	printf("%s\n", tab);
 	free(tab);
 	return (0);
-}*/
+}

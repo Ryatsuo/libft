@@ -1,5 +1,5 @@
 // Recherche une occurence entre deux chaines de caractère
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

@@ -1,4 +1,6 @@
 // Rechercher la première occurrence d'un caractère dans une chaîne
+#include "libft.h"
+
 char	*strchr(const char *s, int c)
 {
 	int	i;

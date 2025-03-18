@@ -1,6 +1,7 @@
-#include <stdlib.h>
+// Copie un tableau avec malloc avec un indice de départ jusqu'a len caractère
+#include "libft.h"
 
-char	*ft_strscpy(char const *c, char *tab, unsigned int start, size_t len)
+static char	*ft_strscpy(char const *c, char *tab, int start, size_t len)
 {
 	size_t	i;
 
@@ -53,7 +54,7 @@ char	*ft_substr(char const *c, unsigned int start, size_t len)
 		return (NULL);
 	return (ft_strscpy(c, tab, tmp_start, i));
 }
-/*
+
 #include <stdio.h>
 int main (void)
 {
@@ -62,4 +63,4 @@ int main (void)
 	printf("le tableau a pour valeur :%s\n", tab);
 	free(tab);
 	return (0);
-}*/
+}

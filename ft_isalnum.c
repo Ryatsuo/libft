@@ -1,4 +1,6 @@
 // Teste si un caractère est alphanumérique
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z')

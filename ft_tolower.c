@@ -1,3 +1,4 @@
+// Convertit les lettre majuscule en minuscule
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

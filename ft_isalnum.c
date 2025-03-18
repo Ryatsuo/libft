@@ -1,3 +1,4 @@
+// Teste si un caractère est alphanumérique
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z')

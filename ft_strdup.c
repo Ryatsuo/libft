@@ -1,3 +1,4 @@
+// Duplique un chaine de caractère avec Malloc
 #include <stdlib.h>
 
 size_t	ft_strlen(const char *s)

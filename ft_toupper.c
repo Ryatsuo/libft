@@ -1,3 +1,4 @@
+// Convertit les lettres minuscule en majuscule
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

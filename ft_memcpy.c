@@ -1,3 +1,4 @@
+// Copie un nombre d'octets d'une source vers une destination
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t				i;

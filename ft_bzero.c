@@ -1,3 +1,4 @@
+// Convertit tout les octest d'une zone mémoire à 0
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*tmp;

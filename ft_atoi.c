@@ -1,3 +1,4 @@
+// Convertit un char en int
 int	ft_atoi(const char *nptr)
 {
 	int	nbr;

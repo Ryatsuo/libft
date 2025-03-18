@@ -1,3 +1,4 @@
+// Teste si un caractère est une lettre
 int	ft_isalpha(int c)
 {
 	int	i;

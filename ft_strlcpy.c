@@ -1,3 +1,4 @@
+// Copie une chaine avec une taille maximum
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
 {
 	size_t	i;

@@ -1,3 +1,4 @@
+// Concatène 2 chaines avec une longueur maximum pour dst
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

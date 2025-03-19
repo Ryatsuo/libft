@@ -30,4 +30,5 @@ int	ft_toupper(int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *c, unsigned int start, size_t len);
 char	*ft_strjoin(const char *str1, const char *str2);
+char	**ft_split(char const *s, char c);
 #endif

@@ -3,15 +3,11 @@
 
 int	ft_isalpha(int c)
 {
-	int	i;
-
-	i = 0;
 	while (c)
 	{
 		if ((c < 'a' || c > 'z')
 			&& (c < 'A' || c > 'Z'))
 			return (0);
-		i++;
 	}
 	return (1);
 }

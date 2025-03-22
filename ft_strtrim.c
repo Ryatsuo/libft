@@ -12,9 +12,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	if (!s1 || !set)
 		return (NULL);
-	while (s1[start] && ft_strchr(set, s1[start]))
+	while (s1[start] && ft_strrchr(set, s1[start]))
 		start++;
-	while (end > start && ft_strchr(set, s1[end - 1]))
+	while (end > start && ft_strrchr(set, s1[end - 1]))
 		end--;
 	tab = malloc(sizeof(char) * (end - start + 1));
 	if (!tab)

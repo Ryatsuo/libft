@@ -1,3 +1,4 @@
+// Affiche une chaine de caractère en choisissant ça sortie
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

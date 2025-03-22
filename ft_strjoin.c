@@ -1,3 +1,4 @@
+// Concatène plusieurs chaine en une en ajoutant un délimiteur entre chaque
 #include "libft.h"
 
 char	*ft_strjoin(const char *str1, const char *str2)

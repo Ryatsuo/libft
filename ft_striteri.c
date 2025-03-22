@@ -1,3 +1,4 @@
+// Applique une fonction sur une chaine de caractère
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f) (unsigned int, char*))

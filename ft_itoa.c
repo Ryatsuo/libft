@@ -1,3 +1,4 @@
+// Copie un entier dans une chaine de caractère
 #include "libft.h"
 
 static size_t	comptcarac(int n)

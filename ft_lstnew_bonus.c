@@ -1,3 +1,4 @@
+// Cree une nouvelle liste en copiant une valeur dans content
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)

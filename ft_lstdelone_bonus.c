@@ -1,11 +1,6 @@
 // Supprime en mémoire le contenu d'une liste puis la liste elle même
 #include "libft.h"
 
-static void	ft_del(void *a)
-{
-	free(a);
-}
-
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst)

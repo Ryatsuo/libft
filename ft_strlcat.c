@@ -1,8 +1,5 @@
 // Concatène 2 chaines avec une longueur maximum pour dst
 #include "libft.h"
-# include <stdlib.h>
-# include <stddef.h>
-# include <unistd.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {

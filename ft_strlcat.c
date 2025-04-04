@@ -1,5 +1,8 @@
 // Concatène 2 chaines avec une longueur maximum pour dst
 #include "libft.h"
+# include <stdlib.h>
+# include <stddef.h>
+# include <unistd.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
@@ -20,17 +23,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 		i++;
 	}
 	dst[i + len_dst] = '\0';
-	if (len_dst + len_src >= dsize)
-		return (len_src + dsize);
 	return (len_src + len_dst);
 }
+
 /*
+#include <string.h>
 #include <stdio.h>
 int main (void)
 {
-	const char a[] = " les amis";
-	char b[] =  "coucou";
-	ft_strlcat(b, a, 11);
-	printf("la chaine concatene : %s\n", b);
+	char dest[30]; memset(dest, 0, 30);
+	char * src = (char *)"AAAAAAAAA";
+	char des[30]; memset(dest, 0, 30);
+	char * sr = (char *)"AAAAAAAAA";
+	ft_strlcat(dest, src, 0);
+	strlcat(des, sr, 0); 
+	printf("la chaine concatene : %s\n", dest);
+	printf("la chaine concatene : %s\n", des);
 	return (0);
 }*/

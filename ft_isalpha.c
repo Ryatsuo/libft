@@ -3,12 +3,9 @@
 
 int	ft_isalpha(int c)
 {
-	while (c)
-	{
 		if ((c < 'a' || c > 'z')
 			&& (c < 'A' || c > 'Z'))
 			return (0);
-	}
 	return (1);
 }
 /*#include <stdio.h>

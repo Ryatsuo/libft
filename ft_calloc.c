@@ -3,27 +3,22 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	char	*tab;
+	char	*ptr;
 	size_t	i;
+	size_t	total_size;
 
-	i = 0;
 	if (nmemb == 0 || size == 0)
-	{
-		tab = malloc(1);
-		if (!tab)
-			return (NULL);
-		tab[0] = 0;
-		return (tab);
-	}
-	tab = malloc(size * nmemb);
-	if (!tab)
+		return (malloc(0));
+	if (size > 0 && nmemb > 4294967295 / size)
 		return (NULL);
-	while (i < (nmemb * size))
-	{
-		tab[i] = 0;
-		i++;
-	}
-	return (tab);
+	total_size = nmemb * size;
+	ptr = malloc(total_size);
+	if (!ptr)
+		return (NULL);
+	i = 0;
+	while (i < total_size)
+		ptr[i++] = 0;
+	return (ptr);
 }
 /*
 #include <stdio.h>

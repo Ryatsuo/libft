@@ -20,13 +20,13 @@ char	*ft_substr(char const *c, unsigned int start, size_t len)
 {
 	size_t			i;
 	char			*tab;
-	size_t			c_len;
 	unsigned int	tmp_start;
 
 	i = 0;
-	c_len = ft_strlen(c);
+	if (!c)
+		return (NULL);
 	tmp_start = start;
-	if (len == 0 || start >= c_len)
+	if (len == 0 || start >= ft_strlen(c))
 	{
 		tab = malloc(1);
 		if (!tab)

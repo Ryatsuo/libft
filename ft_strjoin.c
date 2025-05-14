@@ -7,6 +7,8 @@ char	*ft_strjoin(const char *str1, const char *str2)
 	size_t	j;
 	char	*tab;
 
+	if (!str1 || !str2)
+		return (NULL);
 	i = 0;
 	j = 0;
 	tab = malloc(sizeof(char) * (ft_strlen(str1) + ft_strlen(str2) + 1));
